@@ -1,0 +1,1036 @@
+
+
+
+
+
+
+@font-face {
+    font-family: 'UniNeue';
+    src: url('../resources/fonts/Fontfabric - UniNeueRegular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'UniNeue';
+    src: url('../resources/fonts/Fontfabric - UniNeueBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'UniNeue';
+    src: url('../resources/fonts/Fontfabric - UniNeueLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'UniNeue';
+    src: url('../resources/fonts/Fontfabric - UniNeueBlack.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'UniNeue';
+    src: url('../resources/fonts/Fontfabric - UniNeueItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+  
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    
+  }
+  
+  .hero__vector {
+    position: absolute;
+    bottom: 15rem;
+    right: 12rem;
+    width: 60%;
+    height: auto;
+    z-index: 0; 
+    pointer-events: none;
+    transform: rotate(115deg);
+  }
+  
+  .hero__background {
+    position: absolute;
+    top: 0;
+    left: 23rem;
+    width: 100%;
+    height: auto;
+    z-index: 1; 
+  }
+
+  .hero__rectangle--white {
+    position: absolute;
+    top: -15rem;
+    left: 43rem;
+    width: 53%;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .hero__image--personaje {
+    position: absolute;
+    bottom: -0.4rem;
+    right: 6rem;
+    width: 44%;
+    height: auto;
+    z-index: 4;
+  }
+
+  .hero__image--pilar {
+    position: absolute;
+    bottom: 0;
+    left: 35rem;
+    width: 40%;
+    height: auto;
+    z-index: 5;
+  }
+
+  .hero__logo--principal {
+    position: absolute;
+    top: 2rem;
+    left: 17rem;
+    width: 15.7%; 
+    height: auto;
+    z-index: 6;
+  }
+
+  .hero__rectangle--outline {
+    position: absolute;
+    top: 26rem;
+    left: 28rem;
+    transform: translateX(-50%);
+    width: 23%;
+    height: auto;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .hero__content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    z-index: 6;
+    text-align: center;
+  }
+  
+  .hero__text {
+    font-family: 'UniNeue', sans-serif;
+    font-weight: 400; 
+    font-size: 1rem;
+    color: #000;
+    position: absolute;
+    top: 9.4rem;
+    left: 6.8rem;
+    line-height: 1.5;
+    text-align: justify;
+    text-align-last: left;
+    width: 26%;
+  }
+
+  .cta__buttons {
+    margin-top: 20rem;
+    position: absolute;
+    left: 4.7rem;
+    display: flex;
+    width: 80%;
+  }
+  
+  .cta__button {
+    font-family: 'UniNeue', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+  .cta__button--solid {
+    background-color: #F0C970;
+    color: #000;
+    border: none;
+  }
+
+  .cta__button--outline {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #F0C970;
+  }
+  
+  
+  .cta__button:hover {
+    background-color: #D1AB56; 
+  }
+  
+  
+  .hero__institucional {
+    position: relative;
+    margin-top: 23.8rem;
+    right: 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 6;
+  }
+  
+  .hero__institucional-logo {
+    width: 60px;
+    height: auto;
+  }
+  
+  .hero__institucional-barra {
+    width: 2px;
+    height: 40px;
+    background-color: #F0C970;
+    display: inline-block;
+  }
+  
+  .hero__institucional-texto {
+    font-family: 'UniNeue', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #000;
+    max-width: 200px;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #F0C970;
+    z-index: 100;
+  }
+  
+  
+  .navbar__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .navbar__logo {
+    position: relative;
+    z-index: 1;
+    height: 100%; 
+    width: auto;
+    object-fit: contain;
+    padding-left: 1rem; 
+  }
+
+  .navbar__links {
+    display: flex;
+    gap: 2rem;
+    z-index: 1;
+   position: absolute;
+    margin-left: 65%;
+ 
+    
+  }
+  
+  .navbar__link {
+    font-family: 'UniNeue', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  
+.navbar__checkbox {
+    display: none;
+  }
+  
+  
+  .navbar__toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 101;
+    color: #000;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .navbar__toggle {
+      display: block;
+      position: absolute;
+      left: 80%;
+    }
+  
+    .navbar__links {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        flex-direction: column;
+        background-color: #F0C970;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 99;
+        padding: 0 1rem;
+        gap: 1rem;
+      }
+  
+      .navbar__checkbox:checked ~ .navbar__links {
+        max-height: 500px; 
+        padding: 1rem;
+      }
+
+      .navbar__links a {
+        font-size: 1.2rem;
+       position: relative;
+       left: 4rem;
+      }
+    }
+    
+    
+    .navbar__checkbox {
+      display: none;
+    }
+
+    .project__filter {
+        position: relative;
+        top: 15rem;
+        left: 2rem;
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+      
+      
+      .dropdown__icon {
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+      }
+      
+     .dropdown__menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 200px;
+  background-color: #fff;
+  border: 2px solid #F0C970;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.dropdown__menu.show {
+  max-height: 300px; 
+  opacity: 1;
+  padding: 0.5rem 0;
+}
+     .dropdown__item {
+  font-family: 'UniNeue', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  color: #2D7B67;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+      
+     .dropdown__item:hover {
+  background-color: #f9f2dd;
+}
+   .projects {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  position: relative;
+  top: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+      
+    .projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+      
+    .project__card {
+  width: 26%;
+  min-width: auto;
+  height: 400px;
+  position: relative;
+}
+
+      
+      .project__bg {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      
+      .project__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .project__title {
+        font-family: 'UniNeue', sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        color: #F0C970;
+        text-align: right;
+        margin-top: 7.1rem;
+        position: relative;
+        right: 3rem;
+      }
+      
+      .project__description {
+        font-family: 'UniNeue', sans-serif;
+        font-weight: 400;
+        font-size: 0.78rem;
+        color: #2D7B67;
+        text-align: left;
+        margin: 0.5rem 0;
+        width: 80%;
+        position: relative;
+        bottom: 1.8rem;
+        left: 0.5rem;
+      }
+      
+      .project__bar {
+        height: 2px;
+        background-color: #2D7B67;
+        width: 70%;
+        margin: 0.5rem 0;
+        position: relative;
+        left: 0.6rem;
+        bottom: 1rem;
+      }
+      
+      .project__names {
+        font-family: 'UniNeue', sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: #2D7B67;
+        text-align: left;
+        position: relative;
+        left: 0.6rem;
+        bottom: 1.8rem;
+        width: 80%;
+      }
+
+    .projects__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.projects__arrow {
+  background-color: #F0C970;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+
+.projects__arrow:hover {
+  background-color: #d1ab56;
+}
+
+.projects__arrow--left {
+  position: relative;
+  left: -1rem;
+}
+
+.projects__arrow--right {
+  position: relative;
+  right: -1rem;
+}
+
+.projects__container.page3 {
+  justify-content: center;
+}
+
+.projects__container.page4 .project__card {
+  width: 40%; 
+}
+
+.projects__container.page5 .project__card {
+  width: 60%;
+}
+
+.projects__container.page6 .project__card {
+  width: 17rem;
+}
+
+.projects__container.page7 .project__card {
+  width: 40%;
+}
+
+
+
+
+
+.project__card--single {
+  width: 26%; 
+  min-width: 230px;
+  height: 400px;
+  margin: 0 auto; 
+  position: relative;
+}
+
+.projects__heading {
+  font-family: 'UniNeue', sans-serif;
+  font-weight: 800;
+  font-size: 4rem; 
+  line-height: 1.2;
+  color: #F0C970;
+  text-align: right;
+  margin: 0;
+  padding: 0 2rem;
+  position: relative;
+  top: -15rem; 
+}
+
+.jury-section {
+  padding: 6rem 2rem;
+  position: relative;
+  top: 20rem;
+  text-align: center;
+}
+
+.jury-title {
+  font-family: 'UniNeue', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #F0C970;
+  margin-bottom: 3rem;
+}
+
+.jury-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.jury-card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+}
+
+.jury-card-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.jury-photo {
+  position: absolute;
+  top: 8.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+  height: auto;
+}
+
+.photo-1 {
+  width: 20rem; 
+  position: absolute;
+  top: 11rem;
+}
+
+
+
+.jury-name {
+  font-family: 'UniNeue', sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #2D7B67;
+  margin-top: 1rem;
+}
+
+.schedule {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: 10rem auto 0; 
+  padding: 4rem 2rem;
+  z-index: 1;
+}
+
+
+.schedule__banner-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.schedule__banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.schedule__title {
+  font-family: 'UniNeue', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #F0C970;
+  text-align: left;
+  margin-bottom: 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+
+.schedule__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0rem;
+  margin-top: 2rem;
+  position: relative;
+  left: 26rem;
+  
+}
+
+
+
+
+.schedule__card-img {
+  width: 80rem;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  left: 0;
+  
+}
+
+
+.schedule__card {
+  position: relative;
+  left: 6rem;
+  width: 100%;
+  max-width: 280px;
+  flex: 1 1 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.schedule__card-hour {
+  position: absolute;
+  top: 1rem;
+  left: -30rem;
+  font-family: 'UniNeue', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #F0C970;
+  z-index: 2;
+}
+
+.schedule__card-title {
+  font-family: 'UniNeue', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: right;
+  margin-top: 1rem;
+  z-index: 2;
+  position: relative;
+ top: 0rem;
+ line-height: 2rem;
+
+  right: 68rem;
+}
+
+.schedule__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.schedule__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13rem;
+  margin-top: 2rem;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+
+.schedule__arrow {
+  background-color: #F0C970;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  margin: 0 1rem;
+  z-index: 3;
+}
+
+.schedule__arrow:hover {
+  background-color: #d1ab56;
+}
+
+.schedule__dates {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  text-align: right;
+  z-index: 3;
+  
+}
+
+.schedule__date {
+  font-family: 'UniNeue', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #F0C970;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+  margin: 0;
+  line-height: 1.5;
+  position: relative;
+  bottom: 4rem;
+}
+
+.schedule__date.active {
+  opacity: 1;
+}
+
+.card-editorial {
+  position: relative;
+  bottom: 0rem;        
+  
+}
+
+.footer {
+  width: 100vw;          
+  background-color: #267A69;
+  color: white;
+  font-family: 'UniNeue', sans-serif;
+  margin-top: 8rem;
+  padding: 8rem 0;
+
+  
+}
+
+
+.footer__content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 2rem;
+}
+
+.footer__logo-column {
+  max-width: 250px;
+}
+
+.footer__logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer__text {
+  font-size: 0.9rem;
+  color: white;
+  line-height: 1.4;
+  margin: 0.5rem 0;
+}
+
+.footer__social {
+  display: flex;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.footer__social img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 4rem;
+}
+
+.footer__links-small {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.footer__links-column a {
+  display: block;
+  color: #A2D5C1;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer__links-column a:hover {
+  text-decoration: underline;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer__faculty-column p {
+  font-size: 0.95rem;
+  color: white;
+  font-weight: 500;
+}
+
+.footer__bottom {
+  background-color: #1A4F44;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: white;
+  position: relative;
+  top: 8rem;
+}
+
+
+
+
+
+
+      
+      
+
+   @media (max-width: 1024px) {
+  .hero__text,
+  .hero__content {
+    width: 90%;
+    left: 0;
+    transform: none;
+    text-align: center;
+  }
+
+  .hero__image--personaje,
+  .hero__image--pilar,
+  .hero__logo--principal,
+  .hero__vector {
+    width: 70%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 2rem auto;
+  }
+
+  .cta__buttons {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    gap: 1rem;
+  }
+
+  .hero__institucional {
+    flex-direction: column;
+    margin-top: 3rem;
+    left: 0;
+    right: 0;
+  }
+
+  .projects__container,
+  .schedule__cards,
+  .jury-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .project__card,
+  .schedule__card {
+    width: 90%;
+  }
+
+  .schedule__card-hour {
+    font-size: 2rem;
+    left: 1rem;
+  }
+
+  .schedule__card-title {
+    font-size: 1.4rem;
+    right: auto;
+    left: 1rem;
+    text-align: left;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .hero__text {
+    font-size: 1rem;
+    width: 90%;
+    left: 0;
+  }
+
+  .hero__logo--principal {
+    width: 60%;
+  }
+
+  .project__card {
+    width: 100%;
+  }
+
+  .footer__logo {
+    margin: 0 auto 1rem auto;
+  }
+
+  .footer__column {
+    width: 100%;
+  }
+
+  .footer__social img {
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__text {
+    font-size: 0.9rem;
+  }
+
+  .cta__buttons {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .schedule__card-hour {
+    font-size: 1.5rem;
+  }
+
+  .schedule__card-title {
+    font-size: 1.2rem;
+  }
+
+  .schedule__date {
+    font-size: 2rem;
+  }
+}
+
+      
+      
+  
+  
+  
+  html {
+  scroll-behavior: smooth;
+}
+
+  
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  
+  
+    
+    

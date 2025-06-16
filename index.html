@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baaam! - Exposición de Proyectos</title>
+  <link rel="stylesheet" href="design/style.css" />
+  </head>
+
+  
+  
+  <body>
+    
+    <nav class="navbar">
+        
+        <img src="resources/navbar.png" alt="Fondo de navegación" class="navbar__background" />
+      
+      
+        <img src="resources/logo.png" alt="Logo del evento" class="navbar__logo" />
+      
+       
+        <input type="checkbox" class="navbar__checkbox" id="menu-toggle" />
+      
+    
+        <label for="menu-toggle" class="navbar__toggle">☰</label>
+      
+       
+       <div class="navbar__links">
+    <a href="#hero" class="navbar__link">Inicio</a>
+    <a href="#projects" class="navbar__link">Proyectos</a>
+    <a href="#jury" class="navbar__link">Jurados</a>
+    <a href="#schedule" class="navbar__link">Cronograma</a>
+    <a href="#footer" class="navbar__link">Contacto</a>
+  </div>
+</nav>
+      
+  
+    
+ 
+
+  <header id="hero" class="hero">
+    <img src="resources/herobackground2.png" alt="Fondo amarillo" class="hero__background" />
+  </header>
+  
+    <img src="resources/Vector1.png" alt="Fondo verde decorativo" class="hero__vector" />
+
+    <img src="resources/rectangle2.png" alt="Rectángulo blanco" class="hero__rectangle--white" />
+
+    <img src="resources/baamimg2.png" alt="Foto estatuas" class="hero__image--personaje" />
+
+    <img src="resources/baamimg1.png" alt="Pilar decorativo" class="hero__image--pilar" />
+
+    <img src="resources/homelogo.png" alt="Logo Baaam!" class="hero__logo--principal" />
+
+    <img src="resources/rectangle1.png" alt="Contenedor de texto" class="hero__rectangle--outline" />
+
+    <div class="hero__content">
+        <p class="hero__text">
+          El programa de diseño gráfico de la Universidad Autónoma del Caribe expondrá los
+          proyectos de grado de sus próximos egresados a toda la comunidad académica.
+        </p>
+        <div class="cta__buttons">
+            <a href="#projects" class="cta__button cta__button--solid">Ver proyectos</a>
+            <a href="#schedule" class="cta__button cta__button--outline">Asistir al evento</a>
+            
+          </div>
+         
+        <div class="hero__institucional">
+    <img src="resources/UAClogo1.png" alt="Logo UAC" class="hero__institucional-logo" />
+    <span class="hero__institucional-barra"></span>
+    <p class="hero__institucional-texto">
+      Facultad de Arquitectura, Arte y Diseño
+    </p>
+  </div>
+  </header>
+
+  <div class="project__filter">
+    <button class="cta__button cta__button--solid dropdown__toggle">
+      Filtrar por categoría
+      <span class="dropdown__icon">▼</span>
+    </button>
+    <ul class="dropdown__menu">
+      <li class="dropdown__item">Ilustración</li>
+      <li class="dropdown__item">Campaña</li>
+      <li class="dropdown__item">Editorial</li>
+      <li class="dropdown__item">App</li>
+      <li class="dropdown__item">Audiovisual</li>
+    </ul>
+  </div>
+  
+<section id="projects" class="projects">
+  <h2 class="projects__heading">Proyectos</h2>
+
+  <div class="projects__wrapper">
+
+    <button class="projects__arrow projects__arrow--left">←</button>
+
+    <!-- Página 1 -->
+    <div class="projects__container page1">
+      <div class="project__card">
+        <img src="resources/projectcard.png" alt="Proyecto 1" class="project__bg">
+        <div class="project__content">
+          <h3 class="project__title">Proyecto Ilustración 1</h3>
+          <p class="project__description">Libro ilustrado para describir los patrones de conducta en personas con TEA y disminuir su rechazo en el entorno familiar y social en Barranquilla</p>
+          <span class="project__bar"></span>
+          <p class="project__names">Carmen Estephani Daza Tovar</p>
+        </div>
+      </div>
+
+      <div class="project__card">
+        <img src="resources/projectcard.png" alt="Proyecto 2" class="project__bg">
+        <div class="project__content">
+          <h3 class="project__title">Proyecto Ilustración 2</h3>
+          <p class="project__description">Libro ilustrado para rescatar el valor de la tradición oral en niños de 5 a 11 años del departamento de Sucre</p>
+          <span class="project__bar"></span>
+          <p class="project__names">Marelisa Villalba y Almario Jesús David</p>
+        </div>
+      </div>
+
+      <div class="project__card">
+        <img src="resources/projectcard.png" alt="Proyecto 3" class="project__bg">
+        <div class="project__content">
+          <h3 class="project__title">Proyecto Ilustración 3</h3>
+          <p class="project__description">Fanzine ilustrado sobre la fauna urbana de Barranquilla para sensibilizar a los jóvenes y adultos entre los 18 y 34 años</p>
+          <span class="project__bar"></span>
+          <p class="project__names">María José Chamorro,<br>Catalina Andrea Bolaño y<br>Nicolle Alejandra González</p>
+        </div>
+      </div>
+
+      <div class="project__card">
+        <img src="resources/projectcard.png" alt="Proyecto 4" class="project__bg">
+        <div class="project__content">
+          <h3 class="project__title">Proyecto Ilustración 4</h3>
+          <p class="project__description">Florella: Ilustración textil en prendas y accesorios utilitarios para la apropiación cultural de la flora autóctona en la ciudad de Barranquilla a mujeres de 25 a 40 años</p>
+          <span class="project__bar"></span>
+          <p class="project__names">Maillyn Angarita</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Página 2 -->
+    <div class="projects__container page2" style="display: none;">
+      <div class="project__card">
+        <img src="resources/projectcard.png" alt="Proyecto 5" class="project__bg">
+        <div class="project__content">
+          <h3 class="project__title">Proyecto Ilustración 5</h3>
+          <p class="project__description">Libro ilustrado para acompañar a niños de 5 a 10 años y sus familias en el proceso del cáncer infantil en la ciudad de Barranquilla</p>
+          <span class="project__bar"></span>
+          <p class="project__names">Jesús Manuel Pabon Lugo<br>Engy Vanessa Rodríguez Cudris</p>
+        </div>
+      </div>
+
+      <div class="project__card">
+        <img src="resources/projectcard.png" alt="Proyecto 6" class="project__bg">
+        <div class="project__content">
+          <h3 class="project__title">Proyecto Ilustración 6</h3>
+          <p class="project__description">Libro ilustrado para desarrollar la autoestima de niños entre 5 a 9 años con diversidad funcional motriz en la ciudad de Barranquilla</p>
+          <span class="project__bar"></span>
+          <p class="project__names">Lina Marcela Gomez Rueda<br>Brandon Manuel Chung Soto<br>Sayandy Andrea Altamar Florez</p>
+        </div>
+      </div>
+
+      <div class="project__card">
+        <img src="resources/projectcard.png" alt="Proyecto 7" class="project__bg">
+        <div class="project__content">
+          <h3 class="project__title">Proyecto Ilustración 7</h3>
+          <p class="project__description">Libro ilustrado de lenguaje de señas básicas colombianas para niñas de quinto grado del I.E.D Mayor de Barranquilla y del Caribe</p>
+          <span class="project__bar"></span>
+          <p class="project__names">Yerlin Sadith Villamil Hereira<br>Natalia Carolina García Heredia</p>
+        </div>
+      </div>
+
+      <div class="project__card">
+        <img src="resources/projectcard.png" alt="Proyecto 8" class="project__bg">
+        <div class="project__content">
+          <h3 class="project__title">Proyecto Ilustración 8</h3>
+          <p class="project__description">Revista ilustrada para enseñar buenas prácticas agropecuarias en el cuidado bovino a campesinos de 20 a 40 años en el municipio de Manatí, Atlántico.</p>
+          <span class="project__bar"></span>
+          <p class="project__names">Eilyn Andrea Cantillo Barrios<br>Camila del Pilar Pertuz Maldonado</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- Página 3 -->
+<div class="projects__container page3" style="display: none;">
+  <div class="project__card project__card--single">
+    <img src="resources/projectcard.png" alt="Proyecto 9" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Ilustración 9</h3>
+      <p class="project__description">
+        Libro Ilustrado sobre lactancia materna para madres de Barranquilla, Atlántico entre 18 a 25 años durante el primer año de crianza
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Daniel Eduardo Sierra Fuentes<br>
+        Daniela Saad Marrugo<br>
+        César Alexander Llinás Martelo
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Página 4: Campaña -->
+<div class="projects__container page4" style="display: none;">
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto Campaña 1" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Campaña 1</h3>
+      <p class="project__description">
+        Campaña educativa para fortalecer el sentido de pertenencia y cultura ciudadana hacia el sistema de transporte masivo Transmetro en estudiantes ETDH usuarios del Atlántico, en 2025.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Diego Castro García<br>
+        Faulner Fuentes Vergel<br>
+        Jesús Guerra Rosse
+      </p>
+    </div>
+  </div>
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto Campaña 2" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Campaña 2</h3>
+      <p class="project__description">
+        Fomentar la adopción de hábitos de alimentación saludable a través del diseño de una campaña digital, con el fin de contribuir a la prevención de enfermedades asociadas a la mala alimentación en jóvenes adultos de 18 a 36 años.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Miguel Antonio Piedrahita Cantillo
+      </p>
+    </div>
+  </div>
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto Campaña 3" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Campaña 3</h3>
+      <p class="project__description">
+        Campaña de concientización para reducir la alta tasa de mortalidad e imprudencias de motociclistas en accidentes de tránsito en Soledad y el sur de Barranquilla.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Pedro Luis Orozco Palma<br>
+        Andrés David Herrera Manga
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Página 5: Editorial -->
+<div class="projects__container page5" style="display: none;">
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto Editorial 1" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Editorial 1</h3>
+      <p class="project__description">
+        Recetario alimenticio especializado para personas con diabetes tipo 2 de 50 a 70 años en Barranquilla.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Maria Alejandra Chimá Acuña<br>
+        Roberto Carlos Díaz Chávez<br>
+        Natan Sofía Torres Gutiérrez
+      </p>
+    </div>
+  </div>
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto Editorial 2" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Editorial 2</h3>
+      <p class="project__description">
+        Libro de consulta para padres para fortalecer el desarrollo infantil de niños de 6 a 9 años en la ciudad de Barranquilla, Atlántico.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        David Steven Monroy Burgos<br>
+        Ana Belén Ordoñez Delgado<br>
+        Gabriela María Sierra Altamar
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Página 6: App -->
+<div class="projects__container page6" style="display: none;">
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto App 1" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto App 1</h3>
+      <p class="project__description">
+        Prototipo de App Móvil para mejorar la gestión del mantenimiento vehicular para prevenir fallos mecánicos en los vehículos de la ciudad de Barranquilla y el Área Metropolitana.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Anderson De Jesús Ariza Otero<br>
+        Leidy Laura Nossa Palacio<br>
+        Brayan Edgardo Ramos Rangel
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Página 7: Audiovisual -->
+<div class="projects__container page7" style="display: none;">
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto Audiovisual 1" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Audiovisual 1</h3>
+      <p class="project__description">
+        El diseño gráfico como herramienta para apoyar a padres con hijos diagnosticados con autismo (TEA), brindando la posibilidad de una crianza positiva.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Emmanuel Ospino Acosta
+      </p>
+    </div>
+  </div>
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto Audiovisual 2" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Audiovisual 2</h3>
+      <p class="project__description">
+        Procrastinación en Estudiantes de la Universidad Autónoma del Caribe.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Juan Felipe Casanova Mei<br>
+        Aimar Eduardo Palacio Cumplido
+      </p>
+    </div>
+  </div>
+
+  <div class="project__card">
+    <img src="resources/projectcard.png" alt="Proyecto Audiovisual 3" class="project__bg">
+    <div class="project__content">
+      <h3 class="project__title">Proyecto Audiovisual 3</h3>
+      <p class="project__description">
+        Cortometraje audiovisual sobre la adicción a la pornografía dirigido a adultos jóvenes de 18 a 30 años en la ciudad de Barranquilla.
+      </p>
+      <span class="project__bar"></span>
+      <p class="project__names">
+        Daniela Benitez Vargas<br>
+        Daniel Molina Martinez<br>
+        Valentina Monroy Monsalvo
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <button class="projects__arrow projects__arrow--right">→</button>
+  </div>
+</section>
+
+
+<section id="jury" class="jury-section">
+  <h2 class="jury-title">Jurados</h2>
+  <div class="jury-cards">
+    <div class="jury-card">
+      <img src="resources/guestcard.png" alt="Tarjeta 1" class="jury-card-bg" />
+      <img src="resources/photo1.png" alt="Foto 1" class="jury-photo photo-1" />
+      <p class="jury-name">Ketty Miranda</p>
+    </div>
+
+    <div class="jury-card">
+      <img src="resources/guestcard.png" alt="Tarjeta 2" class="jury-card-bg" />
+      <img src="resources/photo2.png" alt="Foto 2" class="jury-photo" />
+      <p class="jury-name">Alex Pernett</p>
+    </div>
+
+    <div class="jury-card">
+      <img src="resources/guestcard.png" alt="Tarjeta 3" class="jury-card-bg" />
+      <img src="resources/photo3.png" alt="Foto 3" class="jury-photo" />
+      <p class="jury-name">Angely Magdaniel</p>
+    </div>
+
+    <div class="jury-card">
+      <img src="resources/guestcard.png" alt="Tarjeta 4" class="jury-card-bg" />
+      <img src="resources/photo4.png" alt="Foto 4" class="jury-photo photo-4" />
+      <p class="jury-name">Sandra Bernal</p>
+    </div>
+  </div>
+</section>
+
+<section id="schedule" class="schedule">
+  <h2 class="schedule__title">Cronograma de evento</h2>
+
+  <div class="schedule__banner-wrapper">
+    <img src="resources/Desktopbanner.png" alt="Banner de cronograma" class="schedule__banner" />
+  </div>
+
+  <div class="schedule__nav">
+    <button class="schedule__arrow schedule__arrow--left">←</button>
+    <div class="schedule__dates">
+  <p class="schedule__date schedule__date--first active">12 de junio</p>
+  <p class="schedule__date schedule__date--second">13 de junio</p>
+</div>
+
+
+    <div class="schedule__cards schedule__page page-1">
+      <div class="schedule__card">
+        <span class="schedule__card-hour">8:30am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 1</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">9:00am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 2</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">9:30am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 3</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">10:30am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 4</p>
+      </div>
+    </div>
+
+    <div class="schedule__cards schedule__page page-2" style="display: none;">
+      <div class="schedule__card">
+        <span class="schedule__card-hour">11:00am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto campaña 1</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">11:30am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto editorial 1</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">2:00pm</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 5</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">2:30pm</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto APP 1</p>
+      </div>
+    </div>
+
+    <div class="schedule__cards schedule__page page-3" style="display: none;">
+      <div class="schedule__card">
+        <span class="schedule__card-hour">3:00pm</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto campaña 2</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">3:30pm</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto campaña 3</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">4:30pm</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 6</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">5:00pm</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto audiovisual 1</p>
+      </div>
+<div class="schedule__card card-editorial">
+  <span class="schedule__card-hour">5:30am</span>
+  <img src="resources/timecard.png" alt="Tarjeta 13" class="schedule__card-img" />
+  <p class="schedule__card-title">Proyecto editorial 2</p>
+</div>
+
+    </div>
+
+    <div class="schedule__cards schedule__page page-4" style="display: none;">
+     
+      <div class="schedule__card">
+        <span class="schedule__card-hour">8:30am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 7</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">9:00am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 8</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">9:30am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto ilustración 9</p>
+      </div>
+    </div>
+
+    <div class="schedule__cards schedule__page page-5" style="display: none;">
+      <div class="schedule__card">
+        <span class="schedule__card-hour">10:30am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto audiovisual 2</p>
+      </div>
+      <div class="schedule__card">
+        <span class="schedule__card-hour">11:00am</span>
+        <img src="resources/timecard.png" class="schedule__card-img" />
+        <p class="schedule__card-title">Proyecto audiovisual 3</p>
+      </div>
+    </div>
+
+    <button class="schedule__arrow schedule__arrow--right">→</button>
+  </div>
+</section>
+
+<footer id="footer" class="footer">
+  <div class="footer__content">
+    <div class="footer__column footer__logo-column">
+      <img src="resources/uaclogoalt.png" alt="Logo UAC" class="footer__logo" />
+      <p class="footer__text">Calle 90 # 46 – 112<br />Barranquilla, CO</p>
+      <p class="footer__text">Teléfono fijo +57 (605)<br />3853400</p>
+
+      <div class="footer__social">
+  <a href="https://www.instagram.com/uniautonoma/" target="_blank" class="social-button">
+    <img src="resources/instagramicon.png" alt="Instagram">
+  </a>
+  <a href="https://www.facebook.com/uniautonoma" target="_blank" class="social-button">
+    <img src="resources/facebookicon.png" alt="Facebook">
+  </a>
+  <a href="https://www.youtube.com/user/Uautonomadelcaribe" target="_blank" class="social-button">
+    <img src="resources/youtubeicon.png" alt="YouTube">
+    <a href="https://x.com/uautonoma" target="_blank" class="social-button" aria-label="Twitter">
+    <img src="resources/twittericon.png" alt="Twitter">
+  </a>
+</div>
+
+
+      <p class="footer__text footer__links-small">
+        Directorio Institucional<br />
+        Términos de Uso y Privacidad
+      </p>
+    </div>
+
+    <div class="footer__column footer__links-column">
+      <h4 class="footer__title">SOBRE NOSOTROS</h4>
+      <a href="https://www.uac.edu.co/la-universidad/principios-e-historia/">La Universidad</a>
+      <a href="https://www.uac.edu.co/la-universidad/nuestro-campus/">Nuestro campus</a>
+      <a href="https://www.uac.edu.co/la-universidad/normatividad-y-reglamentos/">Normatividad y reglamentos</a>
+      <a href="https://www.uac.edu.co/canales-atencion/">Canales de atencion</a>
+      <a href="https://www.uac.edu.co/la-universidad/transparencia-uac">Transparencia UAC</a>
+      <a href="https://www.uac.edu.co/la-universidad/transparencia-uac/rendicion-de-cuentas-2021/">Rendicion de cuentas</a>
+      <a href="https://www.uac.edu.co/canales-atencion/notificaciones-judiciales/">Notificaciones judiciales</a>
+      <a href="https://siac.uac.edu.co/">Aseguramiento de la Calidad</a>
+      <a href="https://www.uac.edu.co/event/">Agenda de eventos</a>
+      <a href="https://www.uac.edu.co/trabaje-con-nosotros/">Trabaje con nosotros</a>
+    </div>
+
+    <div class="footer__column footer__faculty-column">
+      <p>Facultad de Arquitectura,<br />Arte y Diseño</p>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>
+      Universidad Autónoma del Caribe - Vigilada Mineducación. Todos los
+      derechos reservados.<br />
+      2025 Facultad de Arquitectura, Arte y Diseño.
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+  
+  
+ <script>
+  const toggle = document.querySelector('.dropdown__toggle');
+  const menu = document.querySelector('.dropdown__menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove('show');
+    }
+  });
+</script>
+
+<script>
+  const pages = document.querySelectorAll('.projects__container');
+  const leftArrow = document.querySelector('.projects__arrow--left');
+  const rightArrow = document.querySelector('.projects__arrow--right');
+  let currentPage = 0;
+
+  function showPage(index) {
+    pages.forEach((page, i) => {
+      page.style.display = i === index ? 'flex' : 'none';
+    });
+  }
+
+  rightArrow.addEventListener('click', () => {
+    currentPage = (currentPage + 1) % pages.length;
+    showPage(currentPage);
+  });
+
+  leftArrow.addEventListener('click', () => {
+    currentPage = (currentPage - 1 + pages.length) % pages.length;
+    showPage(currentPage);
+  });
+
+  showPage(currentPage);
+</script>
+
+<script>
+  const dropdownItems = document.querySelectorAll('.dropdown__item');
+
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const category = item.textContent.trim().toLowerCase();
+      const containers = document.querySelectorAll('.projects__container');
+
+      
+      containers.forEach(container => {
+        container.style.display = 'none';
+      });
+
+     
+      if (category === 'ilustración') {
+        document.querySelector('.page1').style.display = 'flex';
+        currentPage = 0;
+      } else if (category === 'campaña') {
+        document.querySelector('.page4').style.display = 'flex';
+        currentPage = 3;
+      }else if (category === 'editorial') {
+       document.querySelector('.page5').style.display = 'flex';
+       currentPage = 4;
+      }else if (category === 'app') {
+      document.querySelector('.page6').style.display = 'flex';
+      currentPage = 5;
+      }else if (category === 'audiovisual') {
+  document.querySelector('.page7').style.display = 'flex';
+  currentPage = 6;
+}
+
+
+
+      
+    });
+  });
+</script>
+<script>
+  const schedulePages = document.querySelectorAll('.schedule__cards');
+  const scheduleLeftArrow = document.querySelector('.schedule__arrow--left');
+  const scheduleRightArrow = document.querySelector('.schedule__arrow--right');
+  let currentSchedulePage = 0;
+
+  function showSchedulePage(index) {
+    schedulePages.forEach((page, i) => {
+      page.style.display = i === index ? 'flex' : 'none';
+    });
+  }
+
+  scheduleRightArrow.addEventListener('click', () => {
+    currentSchedulePage = (currentSchedulePage + 1) % schedulePages.length;
+    showSchedulePage(currentSchedulePage);
+  });
+
+  scheduleLeftArrow.addEventListener('click', () => {
+    currentSchedulePage = (currentSchedulePage - 1 + schedulePages.length) % schedulePages.length;
+    showSchedulePage(currentSchedulePage);
+  });
+
+  showSchedulePage(currentSchedulePage); 
+</script>
+
+<script>
+  const schedulepages = document.querySelectorAll('.schedule__page');
+  const leftBtn = document.querySelector('.schedule__arrow--left');
+  const rightBtn = document.querySelector('.schedule__arrow--right');
+  let currentSchedule = 0;
+
+  function showSchedulePage(index) {
+  schedulePages.forEach((page, i) => {
+    page.style.display = i === index ? 'flex' : 'none';
+  });
+
+  const date12 = document.querySelector('.schedule__date--first');
+  const date13 = document.querySelector('.schedule__date--second');
+
+  if (index < 3) {
+    
+    date12.classList.add('active');
+    date13.classList.remove('active');
+  } else {
+    
+    date12.classList.remove('active');
+    date13.classList.add('active');
+  }
+}
+
+
+
+  leftBtn.addEventListener('click', () => {
+    currentSchedule = (currentSchedule - 1 + schedulePages.length) % schedulePages.length;
+    showSchedulePage(currentSchedule);
+  });
+
+  rightBtn.addEventListener('click', () => {
+    currentSchedule = (currentSchedule + 1) % schedulePages.length;
+    showSchedulePage(currentSchedule);
+  });
+
+  showSchedulePage(currentSchedule);
+</script>
+
+
+
+</body>
+  
+    
